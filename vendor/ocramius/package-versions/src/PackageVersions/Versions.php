@@ -12,7 +12,7 @@ final class Versions
 {
     const VERSIONS = array (
   'ocramius/package-versions' => '1.1.3@72b226d2957e9e6a9ed09aeaa29cabd840d1a3b7',
-  '__root__' => '1.0.0.0@',
+  '__root__' => '9999999-dev@bf4865ded082ad77a82bc9f5fa21d8961a00990d',
 );
 
     private function __construct()

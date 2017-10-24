@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'PackageVersions\\FallbackVersions' => $vendorDir . '/ocramius/package-versions/src/PackageVersions/FallbackVersions.php',
+    'PackageVersions\\Installer' => $vendorDir . '/ocramius/package-versions/src/PackageVersions/Installer.php',
+    'PackageVersions\\Versions' => $vendorDir . '/ocramius/package-versions/src/PackageVersions/Versions.php',
 );

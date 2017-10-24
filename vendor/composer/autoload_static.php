@@ -20,11 +20,18 @@ class ComposerStaticInita68d28e228555f2114f6f7ca1a5a65c2
         ),
     );
 
+    public static $classMap = array (
+        'PackageVersions\\FallbackVersions' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/FallbackVersions.php',
+        'PackageVersions\\Installer' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/Installer.php',
+        'PackageVersions\\Versions' => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions/Versions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita68d28e228555f2114f6f7ca1a5a65c2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita68d28e228555f2114f6f7ca1a5a65c2::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInita68d28e228555f2114f6f7ca1a5a65c2::$classMap;
 
         }, null, ClassLoader::class);
     }
