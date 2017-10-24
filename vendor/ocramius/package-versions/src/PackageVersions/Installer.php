@@ -1,6 +1,6 @@
 <?php
 
-namespace PackageVersions;
+namespace PHPStanVendor\PackageVersions;
 
 use Composer\Composer;
 use Composer\Config;
